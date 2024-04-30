@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <h1 class="mainheading">APPLICATION DE PAIEMENT</h1>
+            <br>
+            <h2>Informations sur l'utilisateur</h2>
+            <p>Nom: 
+                <input type="text" required name="name" placeholder="Nom">
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Genre</legend>
+                    Homme <input type="radio" name="gender" id="male" value="M" required> Femme <input type="radio" name="gender" id="female" value="F" required>
+                </fieldset>
+            </p>
+            <p>
+                Adresse:
+                <textarea placeholder="Entrez votre adresse" name="address" id="address" cols="30" rows="4" required></textarea>
+            </p>
+            <p>
+                E-mail:
+                <input type="email" name="email" required placeholder="abcd@gmail.com">
+            </p>
+            <p>
+                Code postal:
+                <input type="text" name="postal_code" id="postal_code" required placeholder="12345">
+            </p>
+            <h2>Informations de paiement</h2>
+            <p>
+                Numéro de carte:
+                <input type="text" name="card_number" id="card_number" required placeholder="1111 2222 3333 4444">
+            </p>
+            <p>
+                Date d'expiration:
+                <input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p>
+                CVV:
+                <input type="text" name="cvv" id="cvv" required placeholder="123">
+            </p>
+            <input type="submit" value="Payer">
+        </form>
+    </div>
+</body>
+</html>
